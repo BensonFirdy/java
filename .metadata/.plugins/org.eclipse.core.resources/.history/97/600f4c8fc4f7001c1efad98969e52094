@@ -1,0 +1,21 @@
+package com.codingdojo.services;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.models.Expense;
+import com.codingdojo.repositories.ExpenseRepository;
+
+@Service
+public class ExpenseService {
+	
+	
+	@Autowired
+	private ExpenseRepository expenseRepository;
+	
+	public ArrayList<Expense> findAll(){
+		return (ArrayList<Expense>) expenseRepository.findAll();
+	}
+}

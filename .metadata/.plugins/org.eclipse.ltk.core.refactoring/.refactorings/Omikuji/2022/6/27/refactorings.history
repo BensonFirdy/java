@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Omikuji&apos;&#x0D;&#x0A;- Original project: &apos;Omikuji&apos;&#x0D;&#x0A;- Original element: &apos;Omikuji/src/main/java/com.bf.javaspringtemplate&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bf.javaspringtemplate" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bf" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1656301955029" subPackages="false" version="1.0"/>
+</session>

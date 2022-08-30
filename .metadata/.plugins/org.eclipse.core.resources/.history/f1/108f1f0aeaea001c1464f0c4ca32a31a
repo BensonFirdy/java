@@ -1,0 +1,12 @@
+package caresoft;
+
+public class Physician extends User implements HIPAACompliantUser {
+
+	public Physician(Integer id) {
+		super(id);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+}

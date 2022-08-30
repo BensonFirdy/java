@@ -1,0 +1,17 @@
+package com.codingdojo.services;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.repositories.ExpenseRepository;
+
+@Service
+public class ExpenseService {
+	
+	private ExpenseRepository expenseRepository;
+	
+	public ExpenseService(ExpenseRepository expenseRepository) {
+		
+		this.expenseRepository=expenseRepository;
+	}
+
+}

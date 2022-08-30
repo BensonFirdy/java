@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\benso\OneDrive\Desktop\dojo_assignments\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1307502727.index
+\crud\src\main\java
+C:\Users\benso\OneDrive\Desktop\dojo_assignments\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\397432915.index
+\Omikuji\src\main\java
+C:\Users\benso\OneDrive\Desktop\dojo_assignments\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2736206003.index
+\fruityloops\src\main\java
+C:\Users\benso\OneDrive\Desktop\dojo_assignments\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1697538862.index
+\login_registration\src\main\java
+C:\Users\benso\OneDrive\Desktop\dojo_assignments\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2263519338.index
+\dojo_ninja\src\main\java
+C:\Users\benso\OneDrive\Desktop\dojo_assignments\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2362998928.index
+\crud\src\main\java

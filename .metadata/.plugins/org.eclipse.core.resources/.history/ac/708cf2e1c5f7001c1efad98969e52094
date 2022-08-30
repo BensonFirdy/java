@@ -1,0 +1,40 @@
+package com.codingdojo.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.codingdojo.models.Expense;
+import com.codingdojo.services.ExpenseService;
+
+@Controller
+public class RootController {
+	
+	@Autowired
+	private ExpenseService expenseService;
+	
+	
+	@GetMapping("/")
+	public String index(Model model) {
+		
+		model.addAttribute("expense",new Expense());
+		return "index";
+	}
+	
+	@PostMapping("/")
+	public String createExpense() {
+		return "redirect:/";
+	}
+
+	@GetMapping("/show/{id}")
+	public String show() {
+		return "show";
+	}
+	
+	@GetMapping("/edit/{id}")
+	public String edit() {
+		return "edit";
+	}
+}

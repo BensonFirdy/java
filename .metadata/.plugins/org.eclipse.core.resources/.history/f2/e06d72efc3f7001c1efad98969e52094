@@ -1,0 +1,16 @@
+package com.codingdojo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.repositories.ExpenseRepository;
+
+@Service
+public class ExpenseService {
+	
+	
+	@Autowired
+	private ExpenseRepository expenseRepository;
+	
+	
+}

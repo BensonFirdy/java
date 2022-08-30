@@ -1,0 +1,30 @@
+package com.codingdojo.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.codingdojo.services.ExpenseService;
+
+@Controller
+public class RootController {
+	
+	@Autowired
+	private ExpenseService expenseService;
+	
+	
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
+
+	@GetMapping("/show/{id}")
+	public String show() {
+		return "show";
+	}
+	
+	@GetMapping("/edit/{id}")
+	public String edit() {
+		return "edit";
+	}
+}

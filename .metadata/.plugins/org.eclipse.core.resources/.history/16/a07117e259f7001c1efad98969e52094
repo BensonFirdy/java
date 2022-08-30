@@ -1,0 +1,40 @@
+package com.codingdojo.controllers;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.models.TempUser;
+import com.codingdojo.models.User;
+
+@Controller
+@RequestMapping("")
+public class RootController
+{
+
+	@GetMapping("")
+	public String login_register( Model model )
+	{
+		model.addAttribute("userRegister", new User());
+		model.addAttribute("userLogin", new TempUser());
+		return "login_register";
+	}
+	
+	@PostMapping("/register")
+	public String register( @Valid @ModelAttribute("userRegister") User user, BindingResult res, Model model) {
+		
+		if(res.hasErrors()) {
+			
+			model.addAttribute("userRegister", new User());
+			model.addAttribute("userLogin", new TempUser());
+			return "login_register";
+		}
+		return "";
+	}
+};

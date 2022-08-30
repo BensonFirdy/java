@@ -1,0 +1,13 @@
+package com.codingdojo;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class RootController {
+
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
+	
+}
